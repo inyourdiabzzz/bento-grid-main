@@ -221,18 +221,106 @@
 }
 
 /*Settings for mobile devices 319px to 480px*/
-@media(min-width: 319px) and (max-width: 480px){
-    *{
-        display: flex;
-        flex-direction: column;
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .main-grid{
-        display: grid;
-        grid-template-columns: 300px;
-    }
+@media screen and (min-width: 319px) and (max-width: 480px){
+    
+    /*container for grid*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px 0;
+    background: linear-gradient(145deg, #f2f2f2, #ffffff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+/*Grid Setup*/
+.main-grid{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*styling for create schedule*/
+.create-schedule{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(31, 66%, 93%);
+    font-weight: 800;
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+/*styling for social media 10x*/
+.social-media-10x{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+/*schedule to social styling*/
+.schedule-to-social{
+    background-color: hsl(254, 88%, 90%);
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+}
+/*styling for content-using-ai*/
+.content-using-ai{
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: hsl(39, 100%, 71%);
+    box-sizing: border-box;
+    width: 100%;
+}
+/*manage-container styling*/
+.manage-multiple-accounts{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    padding-left: 18px;
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    width: 100%;
+}
+/*maintain-consistent-posting styling*/
+.maintain-consistent-posting {
+    background-color: hsl(39, 100%, 71%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.faster-audience-growth{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    width: 100%;
+}
+/*grow container styling*/
+.growth-followers{
+    background-color: hsl(256, 67%, 59%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
 }
